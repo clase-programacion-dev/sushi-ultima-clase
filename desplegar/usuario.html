@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="usuario.css"> <!-- link para la hoja de estilos de css -->
+    <title>Document</title>
+</head>
+<body>
+ <nav id="nav-principal">
+        <!-- imagen con clase -->
+            <img class="img-icono" src="./imagenes/Icono pagina sushi.png" alt="sushi">
+            <!-- Lista desordenada con clase -->
+        <ul class="ul-principal">
+            <li><a href="index.html">Incio</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+            <li><a href="usuario.html">Usuario</a></li>
+            <!-- cada "a" el href es un archivo creado para linkear nuestras paginas -->
+        </ul>
+    </nav>
+
+    <a class="whatsapp" href="https://wa.me/666111555"><img  src="./imagenes/whatsapp.png" alt=""></a>
+
+    <main>
+        <div class="formulario">
+            <form action="/login" method="post">
+            <label for="usuario">Usuario:</label>
+            <input type="text" id="usuario" name="usuario" required>
+
+            <label for="contrasena">Contraseña:</label>
+            <input type="password" id="contrasena" name="contrasena" required>
+
+            <button type="submit">Enviar</button>
+            </form>
+           
+        </div>
+    </main>
+
+    <footer>
+            <div class="columnas">
+                <div class="div-footer">
+                    <h3>Legales</h3>
+                    <ul>
+                        <li><a href="#">Aviso legal</a></li>
+                        <li><a href="#">Política de privacidad</a></li>
+                        <li><a href="#">Términos y condiciones</a></li>
+                    </ul>
+                </div>
+                    <div class="div-footer">
+                        <h3>Contacto</h3>
+                        <ul>
+                            <li><a href="#">Sobre nosotros</a></li>
+                            <li><a href="#">Trabaja con nosotros</a></li>
+                            <li><a href="#">Ayuda / soporte</a></li>
+                        </ul>
+                    </div>
+                        <div class="div-footer">
+                            <h3>Extras</h3>
+                            <ul>
+                                <li><a href="#">Redes sociales</a></li>
+                                <li><a href="#">Alérgenos</a></li>
+                                <li><a href="#">Cookies</a></li>
+                            </ul>
+                        </div>
+            </div>
+        <div class="copyright">
+            <p>
+                 Todos los derechos reservados  - 2025  Copyright ©
+            </p>
+        </div>
+     </footer>
+</body>
+</html>

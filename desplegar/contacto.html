@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="contacto.css">
+    <title>Document</title>
+</head>
+<body>
+<nav id="nav-principal">
+        <!-- imagen con clase -->
+            <img class="img-icono" src="./imagenes/Icono pagina sushi.png" alt="sushi">
+            <!-- Lista desordenada con clase -->
+        <ul class="ul-principal">
+            <li>
+                <a href="index.html">Incio</a>
+            </li>
+            <li>
+                <a href="contacto.html">Contacto</a>
+            </li>
+            <li>
+                <a href="usuario.html">Usuario</a>
+            </li>
+            <!-- cada "a" el href es un archivo creado para linkear nuestras paginas -->
+        </ul>
+</nav>
+
+<a class="whatsapp" href="https://wa.me/666111555"><img  src="./imagenes/whatsapp.png" alt=""></a>
+    <main> <!-- Nuesta caja grande que meteremos dentro dos divs  -->
+        
+        <!-- Primer div para el mapa de google que lo traemos desde google maps, dandole a compartir, insertar un mapa y copiamos el codigo html que lo ponemos en nuestro div -->
+        <div class="mapa" >
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12144.07399353813!2d-3.4645369233847783!3d40.45272754293885!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd423787d41b380f%3A0xc3b9cd4e3aaef4c9!2sRestaurante%20Sushi%20Azuma!5e0!3m2!1ses!2ses!4v1759313688131!5m2!1ses!2ses" width="300" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+
+        <!-- Creamos otro div para poner nuestros restaurantes -->
+        <div class="restaurantes">
+            <!-- Ponemos un h2 para el titulo de la carta -->
+            <h2>Nuestros restaurantes</h2>
+            <!-- h3 para el nombre del restaurante -->
+            <h3>Sushi Azuma</h3>
+            <!-- Creamo un parrafo, dentro del parrafo un span que meteremos dentro la img y fuera del span pondremos el numero de telefono que sera nuetro parrafo -->
+            <p>
+                    <span>
+                        <img class="logo-icono" src="./imagenes/llamada-telefonica.png" alt="icono telefono">
+                    </span>
+                652-111-222
+            </p>
+            <p>
+                    <span>
+                        <img class="logo-icono" src="./imagenes/ubicacion.png" alt="logo ubicación">
+                    </span> 
+                C/metano Nº42
+            </p>
+
+            <p>L - V 13:00 - 17:00 // 20:30 - 00:00  </p>
+        </div>
+
+    </main>
+
+
+    <!-- Creamo otra caja grande llamada section y dentro pondremos el div con distitons a -->
+    <section>
+
+        <div class="redes">
+
+           <a href="https://www.facebook.com/?locale=es_ES"><img class="img-redes" src="./imagenes/facebook.png" alt="icono facebook"></a>
+
+           <a href="https://www.instagram.com/"><img class="img-redes" src="./imagenes/instagram.png" alt="icono intagram"></a>
+
+           <a href="https://x.com/tweeter"> <img class="img-redes" src="./imagenes/gorjeo.png" alt="icono X"></a>
+
+        </div>
+
+    </section>
+
+    <!-- Creamos otra caja para que se llama footer dentro de ella creamos otra caja div que contendra dentro todos las mini cajas -->
+    <footer>
+        <!-- Creamos la caja que contiene todas nuestras mini cajas -->
+            <div class="columnas">
+                <!-- Empezamos a crear tantas mini cajas como columnas querramos en nuestro footer -->
+                <div class="div-footer">
+                    <!-- dentro de las mini cajas ponermos un h3, un ul con li y a para crear nuestros links -->
+                    <h3>Legales</h3>
+                    <ul>
+                        <li>
+                            <a href="#">Aviso legal</a>
+                        </li>
+                        <li>
+                            <a href="#">Política de privacidad</a>
+                        </li>
+                        <li>
+                            <a href="#">Términos y condiciones</a>
+                        </li>
+                    </ul>
+                </div>
+                    <div class="div-footer">
+                        <h3>Contacto</h3>
+                        <ul>
+                            <li>
+                                <a href="#">Sobre nosotros</a>
+                            </li>
+                            <li>
+                                <a href="#">Trabaja con nosotros</a>
+                            </li>
+                            <li>
+                                <a href="#">Ayuda / soporte</a>
+                            </li>
+                        </ul>
+                    </div>
+                        <div class="div-footer">
+                            <h3>Extras</h3>
+                            <ul>
+                                <li>
+                                    <a href="#">Redes sociales</a>
+                                </li>
+                                <li>
+                                    <a href="#">Alérgenos</a>
+                                </li>
+                                <li>
+                                    <a href="#">Cookies</a>
+                                </li>
+                            </ul>
+                        </div>
+            </div>
+            <!-- Creamos otra mini caja para nuestro copyright y asi poder ponerlo en columna junto con nuestra caja grande que contiene las cajitas -->
+        <div class="copyright">
+            <p>
+                 Todos los derechos reservados  - 2025  Copyright ©
+            </p>
+        </div>
+     </footer>
+
+</body>
+</html>

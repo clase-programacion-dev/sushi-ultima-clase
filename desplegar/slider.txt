@@ -1,0 +1,35 @@
+ <main class="main-slider">
+        <div class="slider"></div>
+    </main>
+
+
+
+    ////////// CSS ///////
+
+.slider {
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(./1.jpg.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    width: 80%;
+    animation: efecto linear infinite 40s;
+}
+
+@keyframes efecto {
+  20% {
+    background-image: url(./2.jpg.jpg);
+  }
+  40% {
+    background-image: url(./3.jpg.jpg);
+  }
+  60% {
+    background-image: url(./2.jpg.jpg);
+  }
+  80% {
+    background-image: url(./1.jpg.jpg);
+  }
+}

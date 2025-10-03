@@ -1,0 +1,22 @@
+FORMULARIO VALIDACION JS
+
+document.querySelector('form').addEventListener('submit', function(e) {
+    const usuario = document.getElementById('usuario').value.trim();
+    const contrasena = document.getElementById('contrasena').value;
+
+    // Usuario: solo letras, 3-8 caracteres
+    const usuarioRegex = /^[A-Za-z]{3,8}$/;
+    if (!usuarioRegex.test(usuario)) {
+        alert('El usuario debe contener solo letras y tener entre 3 y 8 caracteres.');
+        e.preventDefault();
+        return;
+    }
+
+    // Contraseña: 5-15 caracteres, al menos 2 números y 1 símbolo especial
+    const contrasenaRegex = /^(?=(?:.*\d){2,})(?=.*[!@#$%^&*()_\-+=\[\]{};:'",.<>/?\\|`~]).{5,15}$/;
+    if (!contrasenaRegex.test(contrasena)) {
+        alert('La contraseña debe tener entre 5 y 15 caracteres, al menos 2 números y 1 símbolo especial.');
+        e.preventDefault();
+        return;
+    }
+});

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css"> <!-- link para la hoja de estilos de css -->
+    <link rel="shortcut icon" href="./imagenes/Icono pagina sushi.png" type="image/x-icon">
+    <script src="main.js" defer></script>
+    <!-- como poner la imagen en la pestaña del navegador -->
+    <title>Sushi Sakura</title>
+    <!-- Titulo que aparece en la pestaña del navegador -->
+</head>
+
+<body>
+
+    <!-- Etiqueta nav con id -->
+    <nav id="nav-principal">
+        <!--         <button class="btn-hamburguesa" id="btn-hamburguesa">
+            <img class="icono-hamburguesa" src="./imagenes/rollo-de-sushi.png" alt="">
+        </button> -->
+        <button class="btn-hamburguesa" id="btn-hamburguesa">
+            <img class="icono-hamburguesa" src="./imagenes/menu-hamburguesa.png" alt="">
+        </button>
+        <!-- imagen con clase -->
+        <img class="img-icono" src="./imagenes/Icono pagina sushi.png" alt="sushi">
+        <!-- Lista desordenada con clase -->
+        <ul id="menu" class="ul-principal">
+            <li><a href="index.html">Incio</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+            <li><a href="usuario.html">Usuario</a></li>
+            <!-- cada "a" el href es un archivo creado para linkear nuestras paginas -->
+        </ul>
+    </nav>
+    <main class="main-slider">
+        <div class="slider"></div>
+    </main>
+    <!-- Para crear el icono de whatssap, crearemos primero un a para generar el link, dentro pondremos la imagen de whatsapp y
+             en el href ponemos https://wa.me/ <-- aquí pondremos el numero de telefono sin espacios ni guiones.  -->
+    <a class="whatsapp" href="https://wa.me/666111555"><img src="./imagenes/whatsapp.png" alt="icono whatsapp"></a>
+
+    <!-- Etiqueta main, nuestro contenedor principal -->
+    <main>
+        <div class="contenedor">
+            <h2>Nigiri</h2>
+            <img class="img-carta"
+                src="https://cdn.tasteatlas.com/images/dishes/ef30d84ca9f04834917378c56630c6da.jpg?m=facebook"
+                alt="nigiri salmon muy rico">
+            <p class="description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quia laboriosam quibusdam
+                ipsam</p>
+            <p class="precio">8€</p>
+            <button class="pedir">Pedir</button>
+        </div>
+        <div class="contenedor">
+            <h2>Roll</h2>
+            <img class="img-carta"
+                src="https://www.oliveradatenea.com/wp-content/uploads/2023/06/Sushi-rolls-de-salmon-y-Olivada-Olivera-dAtenea.jpg"
+                alt="nigiri salmon muy rico">
+            <p class="description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quia laboriosam quibusdam
+                ipsam</p>
+            <p class="precio">10€</p>
+            <button class="pedir">Pedir</button>
+        </div>
+        <!--          <div class="contenedor">
+            <h2>Nigiri</h2>
+            <img class="img-carta" src="https://cdn.tasteatlas.com/images/dishes/ef30d84ca9f04834917378c56630c6da.jpg?m=facebook" alt="nigiri salmon muy rico">
+            <p class="description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quia laboriosam quibusdam ipsam</p>
+            <p class="precio">8€</p>
+            <button class="pedir">Pedir</button>
+        </div>
+         <div class="contenedor">
+            <h2>Nigiri</h2>
+            <img class="img-carta" src="https://cdn.tasteatlas.com/images/dishes/ef30d84ca9f04834917378c56630c6da.jpg?m=facebook" alt="nigiri salmon muy rico">
+            <p class="description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quia laboriosam quibusdam ipsam</p>
+            <p class="precio">8€</p>
+            <button class="pedir">Pedir</button>
+        </div> -->
+    </main>
+    <footer>
+        <div class="columnas">
+            <div class="div-footer">
+                <h3>Legales</h3>
+                <ul>
+                    <li><a href="#">Aviso legal</a></li>
+                    <li><a href="#">Política de privacidad</a></li>
+                    <li><a href="#">Términos y condiciones</a></li>
+                </ul>
+            </div>
+            <div class="div-footer">
+                <h3>Contacto</h3>
+                <ul>
+                    <li><a href="#">Sobre nosotros</a></li>
+                    <li><a href="#">Trabaja con nosotros</a></li>
+                    <li><a href="#">Ayuda / soporte</a></li>
+                </ul>
+            </div>
+            <div class="div-footer">
+                <h3>Extras</h3>
+                <ul>
+                    <li><a href="#">Redes sociales</a></li>
+                    <li><a href="#">Alérgenos</a></li>
+                    <li><a href="#">Cookies</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>
+                Todos los derechos reservados - 2025 Copyright ©
+            </p>
+        </div>
+    </footer>
+</body>
+
+</html>
